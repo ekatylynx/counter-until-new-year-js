@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <div class="wrapper">
+      <main class="card" role="application" aria-labelledby="title">
+        <span class="icon">🎄</span>
+        <h1 id="title">Сколько дней до Нового года?</h1>
+        <p class="subtitle">Введите дату в формате <span class="subtitle-year">дд.мм.гггг</span> — узнаете дни до <strong>31.12.гггг</strong> и является ли год високосным.</p>
+  
+        <div class="row">
+          <input id="dateInput" type="text" placeholder="напр. 10.10.2025" autocomplete="off" />
+          <button id="calcBtn" type="button">Посчитать</button>
+        </div>
+  
+        <div class="result">
+          <div id="daysOut" class="panel muted" aria-live="polite">Здесь появится количество дней до 31.12</div>
+          <div id="leapOut" class="panel muted" aria-live="polite">Здесь появится информация о високосном годе</div>
+          <div id="errorOut" class="panel err" aria-live="polite" style="display:none"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
